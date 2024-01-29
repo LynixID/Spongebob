@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Slackey&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font end -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spongebob Squarepants</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- <style>
+      #footer * {
+        border: 1px solid red;
+      }
+    </style> -->
+  </head>
+  <body class="relative font-noto">
+    <!-- Wave -->
+    <svg
+      width="2000"
+      height="500"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 250"
+      class="absolute -z-10 w-full"
+      preserveAspectRatio="none"
+    >
+      <path
+        fill="#e7eb19"
+        fill-opacity="1"
+        d="M0,160L60,176C120,192,240,224,360,208C480,192,600,128,720,106.7C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- wave end -->
+
+    <!-- navbar start -->
+    <section id="navbar">
+      <header
+        class="headerMobile backdrop-blur-xl z-[9999] lg:backdrop-blur-xl"
+      >
+        <h1 class="font-slackey text-2xl self-center text-slate-800">SS.</h1>
+
+        <nav
+          id="list"
+          class="navMobile translate-x-full backdrop-blur-sm lg:static lg:translate-x-0 lg:w-[55%] lg:backdrop-blur-0 xl:w-[50%]"
+        >
+          <ul
+            class="h-[92vh] py-6 px-10 text-center flex flex-col justify-around lg:h-full lg:w-full lg:flex-row lg:items-center lg:text-sm"
+          >
+            <li class="relative">
+              <a href="#home" class="lgNavbarHover">Beranda</a>
+            </li>
+            <li class="relative">
+              <a href="#about" class="lgNavbarHover">About</a>
+            </li>
+            <li class="relative">
+              <a href="#galery" class="lgNavbarHover">Galery</a>
+            </li>
+            <li class="relative">
+              <a href="#merchant" class="lgNavbarHover">Merchant Shop</a>
+            </li>
+            <li class="relative">
+              <a href="" class="lgNavbarHover" id="navbarMessage">Message</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div
+          class="h-6 flex flex-col justify-between self-center relative lg:hidden aspect-square"
+        >
+          <input
+            type="checkbox"
+            class="absolute w-full h-full scale-110 opacity-0 z-10 cursor-pointer"
+            id="hamburger"
+          />
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+        </div>
+      </header>
+      <div></div>
+    </section>
+    <!-- navbar end -->
+
+    <!-- section start -->
+    <section class="flex" id="home">
+      <div class="lg:p-20 mx-auto pt-[10vh] lg:pt-0">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full p-6 pt-20 md:w-1/2">
+            <h1 class="text-xl font-bold sm:text-2xl xl:text-4xl 2xl:text-6xl">
+              Hello Buddy 👋
+              <span
+                class="block text-base text-slate-800 xl:text-xl 2xl:text-2xl"
+                >Feels good today? Im ...
+              </span>
+            </h1>
+            <h2
+              class="font-slackey text-4xl text-slate-800 sm:text-6xl lg:mb-6 xl:text-7xl 2xl:text-8xl"
+            >
+              Spongebob Squarepants
+            </h2>
+            <p
+              class="mb-6 first-letter:text-xl font-semibold text-slate-800 sm:text-2xl lg:text-base lg:mb-10 xl:text-xl 2xl:text-2xl"
+            >
+              Welcome to my playground, oops.. I mean our playground! Come on..
+              play happily
+            </p>
+            <a
+              href="#about"
+              class="py-2 px-4 bg-slate-900 text-slate-100 rounded-2xl font-semibold border-2 border-slate-500 hover:bg-kuning hover:text-slate-900 hover:rounded-tr-[30px] hover:rounded-bl-[30px] hover:border-slate-800 transition-all duration-300 sm:text-xl sm:px-8 sm:border-4"
+              >To Playground</a
+            >
+          </div>
+          <div class="flex lg:w-2/5">
+            <div></div>
+            <img
+              src="img/spongebob-hai.png"
+              alt="spongebob"
+              class="w-3/5 mx-auto sm:w-5/12 lg:w-4/5"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section end -->
+
+    <!-- About start -->
+    <section id="about">
+      <div
+        class="px-7 mt-32 pt-10 pb-16 bg-gradient-to-b from-white to-slate-200 flex flex-col"
+      >
+        <h1 class="block mx-auto text-3xl font-bold text-slate-800 lg:text-5xl">
+          Something's to Me
+        </h1>
+        <div class="flex flex-wrap justify-around">
+          <div
+            class="mt-10 flex flex-col justify-between lg:max-xl:w-5/12 lgAboutCard xlAboutCard"
+          >
+            <div>
+              <h1 class="judulAbout judulAboutXl">Spatula</h1>
+              <p class="paragrafAbout">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus quam quibusdam eaque corporis, soluta
+              </p>
+            </div>
+
+            <img src="img/spatula.png" alt="" class="aboutCardImg" />
+          </div>
+          <div
+            class="mt-10 flex flex-col justify-between lg:max-xl:w-5/12 lgAboutCard xlAboutCard"
+          >
+            <div>
+              <h1 class="judulAbout judulAboutXl">Patty</h1>
+              <p class="paragrafAbout">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus labore necessitatibus, consequatur atque corporis
+              </p>
+            </div>
+            <img
+              src="img/patty.png"
+              alt=""
+              class="aboutCardImg scale-90 translate-y-8"
+            />
+          </div>
+          <div
+            class="mt-10 flex flex-col justify-between lg:max-xl:w-5/12 lgAboutCard xlAboutCard"
+          >
+            <div>
+              <h1 class="judulAbout judulAboutXl">Garry</h1>
+              <p class="paragrafAbout">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit similique voluptatibus,
+              </p>
+            </div>
+            <img
+              src="img/gary.png"
+              alt=""
+              class="aboutCardImg scale-75 translate-y-4"
+            />
+          </div>
+          <div
+            class="mt-10 flex flex-col justify-between lg:max-xl:w-5/12 lgAboutCard xlAboutCard"
+          >
+            <div>
+              <h1 class="judulAbout judulAboutXl">Pinaple House</h1>
+              <p class="paragrafAbout">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+                ipsum dolor.
+              </p>
+            </div>
+            <img src="img/pinaple.png" alt="" class="aboutCardImg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About end -->
+
+    <!-- galery start -->
+    <section id="galery">
+      <div class="py-36 flex flex-wrap gap-7 justify-center bg-slate-200">
+        <div
+          class="w-3/4 aspect-[4/3] sm:w-5/12 lg:w-3/12 xl:w-1/5 hidden lg:block order-2"
+        ></div>
+        <div
+          class="w-3/4 aspect-[4/3] sm:w-5/12 lg:w-3/12 xl:w-1/5 hidden lg:block order-7 lg:order-8"
+        ></div>
+        <div
+          class="w-3/4 aspect-[4/3] sm:w-5/12 lg:w-3/12 xl:w-1/5 hidden order-[18] xl:block"
+        ></div>
+        <div
+          class="w-3/4 aspect-[4/3] sm:w-5/12 lg:w-3/12 xl:w-1/5 hidden lg:block order-[17]"
+        ></div>
+        <div
+          class="w-3/4 aspect-[4/3] sm:w-5/12 lg:w-3/12 xl:w-1/5 hidden lg:block order-[13]"
+        ></div>
+        <div
+          class="w-3/4 aspect-[4/3] sm:w-5/12 lg:w-3/12 xl:w-1/5 hidden lg:block order-[20]"
+        ></div>
+        <div
+          class="w-3/4 aspect-[4/3] sm:w-5/12 lg:w-3/12 xl:w-1/5 hidden lg:block order-[15]"
+        ></div>
+        <div class="galeryCard sm:order-3">
+          <div
+            class="pt-10 text-4xl font-semibold pl-2 text-slate-800 w-full h-full hover:scale-110 hover:pl-5 transition-all duration-300 sm:text-2xl lg:text-4xl xl:text-3xl"
+          >
+            <h1>Spongebob Galery</h1>
+          </div>
+        </div>
+        <div class="galeryCard sm:order-10">
+          <div
+            class="flex justify-end items-end w-full h-full text-xl p-2 pr-5 font-semibold text-slate-800 hover:scale-110 hover:pb-2 transition-all duration-300 lg:text-2xl xl:text-xl"
+          >
+            <h1>By : Lynix-ID</h1>
+          </div>
+        </div>
+        <div class="galeryCard order-1">
+          <div class="galeryImg bg-[url('img/1.jpg')]">
+            <div class="cardImgTitle">
+              <h1>Spongebob Squarepants</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-8 lg:order-7">
+          <div class="galeryImg bg-[url('img/2.jpg')]">
+            <div class="cardImgTitle">
+              <h1>Jelly Fish Field</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-6">
+          <div class="galeryImg bg-[url('img/3.jpg')]">
+            <div class="cardImgTitle">
+              <h1>Bikini Bottom</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-4">
+          <div class="galeryImg bg-[url('img/4.jpg')]">
+            <div class="cardImgTitle">
+              <h1>Patrick</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-9">
+          <div class="galeryImg bg-[url('img/5.jpg')]">
+            <div class="cardImgTitle">
+              <h1>Sandy's Treedome</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-5">
+          <div class="galeryImg bg-[url('img/6.jpg')]">
+            <div class="cardImgTitle">
+              <h1>WidWod</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-11">
+          <div class="galeryImg bg-[url('img/7.jpg')]">
+            <div class="cardImgTitle">
+              <h1>The Magic Conch Shell</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-[14]">
+          <div class="galeryImg bg-[url('img/8.jpg')]">
+            <div class="cardImgTitle">
+              <h1>The Giant Alaskan Bull Worm</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-[16]">
+          <div class="galeryImg bg-[url('img/9.jpg')]">
+            <div class="cardImgTitle">
+              <h1>Bubble Buddy</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-[12]">
+          <div class="galeryImg bg-[url('img/0.jpeg')]">
+            <div class="cardImgTitle">
+              <h1>Kelpo Cereal</h1>
+            </div>
+          </div>
+        </div>
+        <div class="galeryCard order-[19] lg:order[18]">
+          <div class="galeryImg bg-[url('img/12.jpg')]">
+            <div class="cardImgTitle">
+              <h1>Goo Lagoon Beach</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- galery ends -->
+
+    <!-- Merchant start -->
+    <section id="merchant" class="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2e8f0"
+          fill-opacity="1"
+          d="M0,160L60,176C120,192,240,224,360,245.3C480,267,600,277,720,266.7C840,256,960,224,1080,218.7C1200,213,1320,235,1380,245.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        ></path>
+      </svg>
+
+      <div class="py-20 px-5">
+        <div class="w-full flex flex-wrap items-center sm:justify-between">
+          <div
+            class="w-full mb-20 px-2 pt-4 pb-8 border-4 border-slate-500 rounded-tr-[90px] sm:w-1/2 lg:px-6 lg:pt-8 lg:pb-10 xl:border-8"
+          >
+            <div>
+              <h1
+                class="text-3xl font-bold text-slate-800 mb-4 lg:text-5xl xl:text-6xl 2xl:text-7xl"
+              >
+                Spongebob Merchant Shop
+              </h1>
+              <p
+                class="text-slate-950 first-letter:text-2xl font-medium mb-10 lg:text-lg lg:first-letter:text-4xl 2xl:text-2xl"
+              >
+                Get your favorite Spongebob merchandise, starting from hoodies,
+                t-shirts, jackets, shoes, by clicking the following button to go
+                to the merchandise shop.
+              </p>
+              <a
+                href="#merchant"
+                id="merchantButton"
+                class="py-[8px] px-7 rounded-full bg-white shadow-lg shadow-slate-500 inline-block font-bold text-lg hover:bg-kuning hover:text-slate-900 transition-all duration-300 lg:text-xl lg:py-4 lg:px-12 2xl:text-3xl"
+                >Merchant</a
+              >
+            </div>
+          </div>
+          <div class="w-full relative sm:w-5/12 sm:-translate-y-10 -z-10">
+            <svg
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute -z-10 w-full scale-110"
+            >
+              <path
+                fill="#FCFF3D"
+                d="M30.9,-43.7C43,-46.4,58.1,-44.3,64.7,-36.2C71.3,-28.1,69.6,-14.1,58.5,-6.4C47.5,1.3,27.2,2.6,16.1,3.1C5,3.5,3.3,3,2.1,2.6C1,2.3,0.5,2,-6.3,12.9C-13.1,23.8,-26.3,46,-37.8,52.5C-49.4,58.9,-59.5,49.5,-55,38.1C-50.5,26.8,-31.4,13.4,-30.8,0.4C-30.2,-12.6,-47.9,-25.3,-53.8,-39.1C-59.7,-52.9,-53.8,-67.9,-42.8,-65.9C-31.9,-63.9,-16,-44.9,-3.3,-39.2C9.3,-33.4,18.7,-41,30.9,-43.7Z"
+                transform="translate(100 100)"
+              />
+            </svg>
+            <img
+              src="img/spongebob-hero1.png"
+              alt="Spongebob"
+              class="sm:scale-110"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Merchant end -->
+
+    <!-- footer start -->
+    <section id="footer">
+      <div
+        class="w-full mt-20 py-16 px-7 bg-slate-900 text-slate-400 sm:flex sm:flex-wrap sm:justify-around sm:py-12 md:pb-10 md:pt-1"
+      >
+        <div
+          id="lynix"
+          class="sm:w-full sm:text-center md:w-[30%] md:mt-8 md:text-start xl:w-1/5"
+        >
+          <div>
+            <div class="text-lg">
+              <h1 class="text-slate-200">Lynix-Id</h1>
+              <p class="text-[12px]">
+                Click the icon below to visit my profile.
+              </p>
+            </div>
+            <div
+              class="flex w-[60%] justify-between text-sm sm:w-[60%] sm:mx-auto md:m-0"
+            >
+              <a href="https://wa.me/+6283845586939"
+                ><i data-feather="phone"></i
+              ></a>
+              <a href="https://gmail.com"><i data-feather="mail"></i></a>
+              <a href="https://www.instagram.com/ilham_stu"
+                ><i data-feather="instagram"></i
+              ></a>
+              <a href="https://facebook.com"><i data-feather="facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="tech"
+          class="my-8 sm:w-[25%] sm:text-center sm:mb-0 md:w-[30%] md:text-start xl:w-1/5"
+        >
+          <h1 class="text-lg text-slate-200">Technology Used</h1>
+          <div>
+            <h2 class="text-[12px]">HTML</h2>
+            <h2 class="text-[12px]">CSS</h2>
+            <h2 class="text-[12px]">Tailwind CSS</h2>
+            <h2 class="text-[12px]">JavaScript</h2>
+          </div>
+        </div>
+        <div
+          id="tools"
+          class="mt-8 sm:w-[25%] sm:text-center md:w-[30%] md:text-start xl:w-1/5"
+        >
+          <h1 class="text-lg text-slate-200">Helpfull Tools</h1>
+          <div class="">
+            <h2 class="text-[12px]">
+              <a href="https://www.blobmaker.app/">Blob Maker</a>
+            </h2>
+            <h2 class="text-[12px]">
+              <a href="https://getwaves.io/">Get Waves</a>
+            </h2>
+            <h2 class="text-[12px]">
+              <a href="https://www.adobe.com">Photoshop</a>
+            </h2>
+            <h2 class="text-[12px]">
+              <a href="https://feathericons.com/">Feather Icons</a>
+            </h2>
+          </div>
+        </div>
+        <div class="hidden mt-8 xl:block xl:w-1/5">
+          <h1 class="text-lg text-slate-200">Platform Support</h1>
+          <h2 class="text-[12px]">Mobile</h2>
+          <h2 class="text-[12px]">Tablet</h2>
+          <h2 class="text-[12px]">Laptop</h2>
+          <h2 class="text-[12px]">Computer</h2>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
