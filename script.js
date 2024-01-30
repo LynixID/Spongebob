@@ -33,5 +33,7 @@ merchantButton.addEventListener('click', function(){
     alert('Fitur yang anda pilih belum tersedia :)');
 });
 
+//feather icon
+feather.replace();
 
 
